@@ -16,7 +16,7 @@ before_install:
   # install kubectl command line tool into travis and GCP environment
   - gcloud components update kubectl
   # equivalent to the IAM credentials of AWS (takes json file created by service account and passes to GCP to allow access to K8S cluster)
-  - gcloud auth activate-service-account --key-file service-acount.json
+  - gcloud auth activate-service-account --key-file service-account.json
   
   # specify what project
   - gcloud config set project multi-k8s-383213
